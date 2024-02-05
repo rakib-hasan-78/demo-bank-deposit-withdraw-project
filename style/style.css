@@ -1,0 +1,85 @@
+:root{
+    --input-bg-custom:linear-gradient(180deg,#4475bd, #225199);
+    --custom-bg-purple:linear-gradient(180deg,var(--bs-indigo), var(--bs-purple));
+    --custom-bg-orange:linear-gradient(180deg, var(--bs-orange), var(--bs-yellow));
+    --custom-bg-pink:linear-gradient(180deg, var(--bs-code-color), var( --bs-form-invalid-color));
+    --input-border:#416eb1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100% !important;
+    background-color: var(--bs-gray-100);
+}
+html{
+    height: 100% !important;
+}
+header{
+    width: 100%;
+}
+
+main{
+    width: 85%;
+    margin: 0 auto;
+}
+.main-content{
+    width: 100%;
+}
+.main-content .title-content h1{
+    font-size: 75px;
+}
+.main-content .login-element{
+    width: 75%;
+    height: 350px;
+}
+.main-content .login-element .card-element-box{
+
+    background-image: linear-gradient(180deg, var(--bs-primary-text-emphasis), var(--bs-primary));
+}
+.main-content .login-element .card-element-box h2{
+    
+   color: var( --bs-white);
+}
+
+.input-background{
+
+    background: var(--input-bg-custom);
+}
+.input-border{
+    border-color:var(--input-border);
+}
+.input-text-white{
+    color:var(--bs-white) !important;
+}
+.form-control::placeholder {
+    color: var(--bs-white) !important;
+    opacity: 1;
+}
+.font-weight{
+    font-weight: 400;
+}
+.deposite-bg{
+    background: var(--custom-bg-purple);
+}
+.wthdraw-bg{
+    background: var( --custom-bg-pink);
+}
+.balance-bg{
+    background: var(--custom-bg-orange);
+}
+.text-size{
+    font-size: 1rem;
+}
+.counter-value{
+    font-size: 3.5rem;
+}
+.card-font{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.active{
+    display: none !important;
+}

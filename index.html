@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo bank log in and deposit</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <main>
+                <div class="main-content p-3 d-flex flex-wrap flex-column align-items-center justify-content-center">
+                    <div class="title-content pt-3 pb-3">
+                        <h1 id="title" class="text-center text-truncate text-capitalize "></h1>
+                    </div>
+                    <div id="login-box" class="login-element pt-3 pb-3 d-flex align-items-center justify-content-center">
+                        <div class="card-element-box card border rounded pt-4 pb-4 p-2 shadow-lg">
+                            <h2 class="card-subtitle text-uppercase">log in</h2>
+                            <form class="login-box input-group pt-2 pb-1">
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" class="w-100 mt-2 mb-2 form-control form-control-sm  form-select form-text rounded input-background input-border input-text-white" placeholder="xample@example.com" required>
+                                <input type="password" name="password" id="password" class="w-100 mt-2 mb-2 form-control form-control-sm  form-select form-text rounded input-background input-border input-text-white" placeholder="your password e.g- 1@!234" required>
+                                <button id="btn-log" class="btn btn-success mt-1 rounded" type="button">submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <main>
+                <div id="main-content" class="active main-content p-3 d-flex flex-wrap flex-column align-items-center justify-content-center">
+                    <div class="col-xxl-12 col-xl-12 pt-4 pb-4">
+                        <div class="row gx-5 gy-2">
+                            <div class="col-xl-4">
+                                <div class="card border rounded pt-3 pb-3 d-flex align-items-center justify-content-center shadow-lg deposite-bg">
+                                    <div class="container">
+                                        <h3 class="text-capitalize text-white text-left text-size p-1">deposit</h3>
+                                        <h4 class="counter-value text-white text-uppercase">$ <span id="deposit-counter">00</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="card border rounded pt-3 pb-3 d-flex align-items-center justify-content-center shadow-lg wthdraw-bg">
+                                    <div class="container">
+                                        <div class="container">
+                                            <h3 class="text-capitalize text-white text-left text-size p-1">withdraw</h3>
+                                            <h4 class="counter-value text-white text-uppercase">$ <span id="withdraw-counter" >00</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 pb-5 mb-4">
+                                <div class="card border rounded pt-3 pb-3 d-flex align-items-center justify-content-center shadow-lg balance-bg">
+                                    <div class="container">
+                                        <h3 class="text-capitalize text-white text-left text-size p-1">balance</h3>
+                                        <h4  class="counter-value text-white text-uppercase">$ <span id="balance-counter">1200</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-12 col-xl-12">
+                        <div class="row gx-5 gy-2 justify-content-around">
+                            <div class="col-xl-5">
+                                <div class="card-element-box card border rounded pt-4 pb-4 p-4 shadow-lg">
+                                    <h2 class="card-font text-capitalize">deposite</h2>
+                                    <form class="login-box input-group pt-2 pb-1">
+                                        <label for="deposit-input"></label>
+                                        <input type="text" name="text" id="deposit-input" class="w-100 mt-2 mb-2 form-control form-control-sm  form-select form-text rounded" placeholder="$ add your balance amount">
+                                        <button id="deposit-btn" class="btn btn-success mt-1 rounded text-capitalize" type="button">deposit</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="card-element-box card border rounded pt-4 pb-4 p-4 shadow-lg">
+                                    <h2 class="card-font text-capitalize">withdraw</h2>
+                                    <form class="login-box input-group pt-2 pb-1">
+                                        <label for="deposit"></label>
+                                        <input type="text" name="withdraw" id="withdraw" class="w-100 mt-2 mb-2 form-control form-control-sm  form-select form-text rounded" placeholder="add your balance">
+
+                                        <button id="withdraw-btn" class="btn btn-success mt-1 rounded text-capitalize" type="button">withdraw</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <main>
+                <div id="footer-content"></div>
+            </main>
+        </div>
+    </footer>
+    <script src="./js/poper.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
