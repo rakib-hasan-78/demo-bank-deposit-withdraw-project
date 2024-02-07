@@ -55,8 +55,11 @@ main{
     color:var(--bs-white) !important;
 }
 .form-control::placeholder {
-    color: var(--bs-white) !important;
+    color: var(--bs-white);
     opacity: 1;
+}
+.custom-input::placeholder{
+    color: var(--bs-secondary-border-subtle) !important;
 }
 .font-weight{
     font-weight: 400;
